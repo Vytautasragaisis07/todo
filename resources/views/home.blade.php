@@ -13,12 +13,12 @@
                                     <table class="table">
                                         <thead class="thead-dark">
                                         <tr>
-                                            <th scope="col">Pavadinimas</th>
-                                            <th scope="col">Aprašymas</th>
-                                            <th scope="col">Kaina</th>
-                                            <th scope="col">El paštas</th>
-                                            <th scope="col">Telefonas</th>
-                                            <th scope="col">Vietovė</th>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Tema</th>
+                                            <th scope="col">Prioritetas</th>
+                                            <th scope="col">Metai</th>
+                                            <th scope="col">Įvykdyta</th>
+                                            <th scope="col">Sukurta</th>
                                             <th scope="col">Radagavimas</th>
                                             <th scope="col">Trinimas</th>
                                         </tr>
@@ -32,6 +32,8 @@
                                                 <td>{{$task->date}}</td>
                                                 <td>{{$task->complete}}</td>
                                                 <td>{{$task->modified}}</td>
+                                                <td><a href="/redaguoti">Redaguoti</a></td>
+                                                <td><a href="/trinti">Trinti</a></td>
                                             </tr>
                                         @endforeach
                                         </tbody>

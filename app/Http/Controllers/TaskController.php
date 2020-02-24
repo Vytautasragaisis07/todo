@@ -31,7 +31,7 @@ class TaskController extends Controller
 
         ]);
 
-        return redirect('/prideti-task');
+        return redirect('/home');
     }
     public function controlTasks(){
         $tasks = Task::all();
