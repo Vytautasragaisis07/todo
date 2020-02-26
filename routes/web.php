@@ -22,3 +22,8 @@ Route::get('/home', 'TaskController@controlTasks')->name('home');
 Route::get('/prideti', 'TaskController@prideti');
 Route::POST('/prideti-task', 'TaskController@pridetiTask');
 
+
+Route::get('/trinti-task/{task}', 'TaskController@TrintiTask');
+Route::get('/redaguotiTask/{task}', 'TaskController@RedaguotiTask');
+Route::get('/redaguoti_task/{task}', 'TaskController@Redaguoti_Task'); //Uzklausa
+

@@ -32,8 +32,8 @@
                                                 <td>{{$task->date}}</td>
                                                 <td>{{$task->complete}}</td>
                                                 <td>{{$task->modified}}</td>
-                                                <td><a href="/redaguoti">Redaguoti</a></td>
-                                                <td><a href="/trinti">Trinti</a></td>
+                                                <td><a href="/redaguotiTask/{{$task->id}}" class="btn btn-primary py-2 px-4 text-white btn-success">Redaguoti</a></td>
+                                                <td><a href="/trinti-task/{{$task->id}}" class="btn btn-primary py-2 px-4 text-white btn-danger">Trinti</a></td>
                                             </tr>
                                         @endforeach
                                         </tbody>
@@ -51,11 +51,7 @@
                         </div>
 
                         </div>
-
-
-                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
